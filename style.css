@@ -1,3 +1,78 @@
 * {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
 
+@font-face {
+	font-family: streamster;
+	src: url(fonts/streamster.ttf);
+}
+
+@font-face {
+	font-family: vcr;
+	src: url(fonts/VCR.ttf);
+}
+
+body {
+	background: #efb557;
+	/* Old browsers */
+	background: -moz-linear-gradient(top, #efb557 0%, #d2897c 40%, #6992bb 57%, #383aaa 88%);
+	/* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #efb557 0%, #d2897c 40%, #6992bb 57%, #383aaa 88%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #efb557 0%, #d2897c 40%, #6992bb 57%, #383aaa 88%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#efb557', endColorstr='#383aaa', GradientType=0);
+	/* IE6-9 */
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+
+.wrapper {
+	width: 65%;
+	margin: 0 auto;
+}
+
+.col {
+	float: left;
+	width: 45%;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+h1 {
+	text-align: center;
+	font-family: streamster, arial;
+	margin-top: 15px;
+}
+
+
+
+/*-------------------------------------------------*/
+/* INPUT SECTION */
+/*-------------------------------------------------*/
+
+input {
+	width: 100%;
+	text-align: right;
+	border: none;
+	background: transparent;
+}
+
+.row {
+	border-bottom: 1px solid gray;
+}
+
+.input {
+	margin: 20px 0;
+}
+
+.description {
+	font-family: vcr;
+	padding-bottom: 7px
 }
