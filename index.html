@@ -12,17 +12,114 @@
 	<div class="wrapper">
 		<h1>Checkout</h1>
 		<section class="input">
-			<div class="row clearfix">
+			<div class="input_row clearfix">
 				<div class="description col">
 					CC Tips
 				</div>
 				<div class="value_area col">
-					<input type="number">
+					<input id="cc_input" type="number" placeholder="$" autofocus>
+				</div>
+			</div>
+			<div class="input_row clearfix">
+				<div class="description col">
+					Cash Tips
+				</div>
+				<div class="value_area col">
+					<input id="cash_input" type="number" placeholder="$">
+				</div>
+			</div>
+			<div class="input_row clearfix">
+				<div class="description col">
+					Xtra Bar
+				</div>
+				<div class="value_area col">
+					<input id="sb_input" type="number" placeholder="$">
 				</div>
 			</div>
 		</section>
-
 	</div>
+
+	<section class="output_one">
+		<div class="output_row">
+			<div class="output_desc col">
+				Total Tip Out
+			</div>
+			<div class="output_val_area tipOutResult" id="temp">
+				result
+			</div>
+		</div>
+		<div class="output_row">
+			<div class="output_desc col">
+				Cash Claimed
+			</div>
+			<div class="output_val_area cashResult">
+				result
+			</div>
+		</div>
+		<div class="output_row">
+			<div class="output_desc col">
+				Total Claimed
+			</div>
+			<div class="output_val_area claimedResult">
+				result
+			</div>
+		</div>
+	</section>
+
+	<section class="output_two">
+		<div class="output_row">
+			<div class="output_desc col">
+				Bus Tips
+			</div>
+			<div class="output_val_area busResult">
+				$$$$$$
+			</div>
+		</div>
+		<div class="output_row">
+			<div class="output_desc col">
+				Runner Tips
+			</div>
+			<div class="output_val_area runResult">
+				$$$$$$
+			</div>
+		</div>
+		<div class="output_row">
+			<div class="output_desc col">
+				Bar Tips
+			</div>
+			<div class="output_val_area barResult">
+				$$$$$$
+			</div>
+		</div>
+	</section>
+
+	<section class="keyboard">
+		<table>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>5</td>
+				<td>6</td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>8</td>
+				<td>9</td>
+			</tr>
+			<tr>
+				<td>.</td>
+				<td>0</td>
+				<td>enter</td>
+			</tr>
+
+		</table>
+
+	</section>
+
 
 </body>
 
