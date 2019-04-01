@@ -70,7 +70,7 @@ h1 {
 
 .output_two,
 .output_one {
-	background: linear-gradient(120deg, #333333, black);
+	background: linear-gradient(250deg, #333333, black);
 }
 
 .output_one,
@@ -85,12 +85,9 @@ h1 {
 	padding: 10px 0;
 }
 
-/*
-.output_val_area,
-.output_desc {
-	color: #ff6700;
+.output_val_area {
+	margin-left: 200px;
 }
-*/
 
 
 /*-------------------------------------------------*/
@@ -115,4 +112,8 @@ td {
 	border-radius: 10px;
 	padding: 11px;
 	color: #39ff14;
+}
+
+td:active {
+	background-image: radial-gradient(circle, transparent, rgba(255, 255, 255, .5));
 }
