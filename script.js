@@ -1,3 +1,5 @@
+//TODO refactor code
+
 var document,
 	console;
 var userInput = document.getElementsByClassName("user_input");
