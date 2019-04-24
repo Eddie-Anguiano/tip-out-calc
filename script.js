@@ -25,32 +25,10 @@ function calculate() {
 	var cashTips = document.getElementById("cash_input").textContent;
 	var sbTips = document.getElementById("sb_input").textContent;
 
-	if (ccTips === "$") {
-		ccTips = 0;
-	} else {
-		ccTips = parseFloat(removeDollarSign(ccTips));
-	}
 
-	if (cashTips === "$") {
-		cashTips = 0;
-	} else {
-		cashTips = parseFloat(removeDollarSign(cashTips));
-	}
-
-	if (sbTips === "$") {
-		sbTips = 0;
-	} else {
-		sbTips = parseFloat(removeDollarSign(sbTips));
-	}
-
-
-
-
-
-
-
-	console.log(ccTips, cashTips, sbTips);
-
+	ccTips = parseFloat(removeDollarSign(ccTips));
+	cashTips = parseFloat(removeDollarSign(cashTips));
+	sbTips = parseFloat(removeDollarSign(sbTips));
 
 	var totalTips = ccTips + cashTips - sbTips;
 	var tipsReceived = ccTips + cashTips;
@@ -60,6 +38,7 @@ function calculate() {
 	var totalTipOut = busTips + barTips + runTips;
 	var claimed = tipsReceived - totalTipOut;
 
+	console.log(ccTips, cashTips, sbTips);
 
 	document.querySelector(".tipOutResult").textContent = "$ " + totalTipOut;
 	document.querySelector(".cashResult").textContent = "$ " + cashTips;
