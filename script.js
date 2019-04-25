@@ -1,4 +1,5 @@
 //TODO refactor code
+//Im from the new branch
 
 var document,
 	console;
